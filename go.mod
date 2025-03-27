@@ -5,6 +5,8 @@ go 1.22.0
 require github.com/labstack/echo/v4 v4.13.3
 
 require (
+	github.com/galeone/tensorflow/tensorflow/go v0.0.0-20221023090153-6b7fa0680c3e // indirect
+	github.com/galeone/tfgo v0.0.0-20230715013254-16113111dc99 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/klauspost/compress v1.16.7 // indirect
 	github.com/labstack/gommon v0.4.2 // indirect
@@ -24,4 +26,5 @@ require (
 	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
 	golang.org/x/time v0.8.0 // indirect
+	google.golang.org/protobuf v1.28.1 // indirect
 )

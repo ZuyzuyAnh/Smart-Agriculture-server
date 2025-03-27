@@ -10,7 +10,6 @@ import (
 	"github.com/labstack/gommon/log"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
 )
 
 func main() {
@@ -45,10 +44,4 @@ func closeMongoDB(client *mongo.Client, ctx context.Context, cancel context.Canc
 	}()
 }
 
-func ping(client *mongo.Client, ctx context.Context) error {
-	if err := client.Ping(ctx, readpref.Primary()); err != nil {
-		return err
-	}
 
-	return nil
-}
